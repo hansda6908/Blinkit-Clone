@@ -56,7 +56,7 @@ header .container {
     width: 52%;
     height: 38px;
     border: 1px solid rgba(0, 0, 0, 0.4);
-    border-radius: 5px;
+    border-radius: 10px;
     background: var(--color-grey-2);
     color: var(--color-grey);
     display: flex;
@@ -86,8 +86,16 @@ header .container {
 }
 
 .login {
-    font-size: 11px;
+    font-size: 15px;
     color: var(--color-grey);
+    background-color: var(--color-white);
+
+
+}
+
+.log {
+    border: none;
+    background-color: var(--color-white);
 }
 
 .cart button {
@@ -136,12 +144,22 @@ header .container {
 }
 
 .categories {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(10, 10%);
+    overflow: auto;
+
 }
 
+.categories::-webkit-scrollbar {
+    display: none;
+}
+
+
 .section-3-img img {
-    width: 100%;
+    /* width: 100%;
+    height: 40px; */
+    height: 165px;
+    width: 150px;
 }
 
 .items {
@@ -243,7 +261,7 @@ footer {
     padding: 20px;
     position: relative;
     top: 85px;
-    background-color: var(--color-grey);
+    background-color: var(--color-grey-2);
 }
 
 .fa-heart {
